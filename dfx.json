@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "weird_fetch_backend": {
+      "main": "src/weird_fetch_backend/main.mo",
+      "type": "motoko"
+    },
+    "weird_fetch_frontend": {
+      "dependencies": [
+        "weird_fetch_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/weird_fetch_frontend/src/index.html"
+      },
+      "source": [
+        "src/weird_fetch_frontend/assets",
+        "dist/weird_fetch_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
