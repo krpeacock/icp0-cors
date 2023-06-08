@@ -1,4 +1,4 @@
-import { weird_fetch_backend } from "../../declarations/weird_fetch_backend";
+import { weird_fetch_backend } from "./actor";
 
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
